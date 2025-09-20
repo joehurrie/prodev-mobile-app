@@ -59,7 +59,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require("@/assets/images/Google.png")} />
+              <Image source={require("@/assets/images/google.png")} />
               <Text style={styles.socialMediaButtonText}>
                 Continue with Google
               </Text>
@@ -74,7 +74,7 @@ export default function Index() {
                 gap: 5,
               }}
             >
-              <Image source={require("@/assets/images/Facebook.png")} />
+              <Image source={require("@/assets/images/facebook.png")} />
               <Text style={styles.socialMediaButtonText}>
                 Continue with Facebook
               </Text>
