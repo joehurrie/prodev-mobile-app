@@ -1,13 +1,17 @@
 # Mobile App Dev Documentation
 
-Started a new application using the expo router template
+Started a new application using the Expo Router template:  
 `npx create-expo-app@latest`
 
-Launch Appication 
+Launched the application:  
 `npx expo start`
 
-On reset, the projct folder saccafold is moved to a new folder app-example
-`npm run reset-project`
+Reset the project using:  
+`npm run reset-project`  
+This moved the scaffolded files into a new folder named `app-example`.
 
-On a re-run the project index.tsx is clean ready for a new start,
-`npm expo start `
+After resetting, the `index.tsx` file was clean and ready for a fresh start.  
+Re-ran the app using:  
+`npx expo start`
+
+
