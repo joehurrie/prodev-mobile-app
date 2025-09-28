@@ -1,5 +1,5 @@
 import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
-import { styles } from "@/styles";
+import { styles } from "@/styles/styles";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
@@ -11,10 +11,10 @@ export default function Index() {
           <Ionicons name="arrow-back" size={25} />
           <Image source={require('@/assets/images/logo.png')} />
         </View>
-        <Text style={styles.largeText}>Sign in to your</Text>
+        <Text style={styles.largeText}>Create Your</Text>
         <Text style={styles.largeText}>Account</Text>
         <Text style={styles.smallText}>
-          Enter your email and password to sign in.
+          Enter your details to create new account.
         </Text>
 
         <View style={styles.formGroup}>
@@ -28,12 +28,18 @@ export default function Index() {
               <TextInput style={{ flex: 1 }} />
               <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
             </View>
+            <View style={{ marginTop: 20 }}>
+            <Text style={styles.placeholderText}>Confirm Password</Text>
+            <View style={styles.passwordGroup}>
+              <TextInput style={{ flex: 1 }} />
+              <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
+            </View>
           </View>
-          <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+          </View>
         </View>
 
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Sign in</Text>
+          <Text style={styles.buttonText}>Create</Text>
         </TouchableOpacity>
 
         <View style={styles.dividerGroup}>
@@ -83,7 +89,7 @@ export default function Index() {
         </View>
 
         <View style={styles.subTextGroup}>
-          <Text style={styles.subText}>Do not have an account?</Text>
+          <Text style={styles.subText}>Already have an account?</Text>
           <Text style={styles.subTextJoin}>Join now</Text>
         </View>
       </SafeAreaView>
