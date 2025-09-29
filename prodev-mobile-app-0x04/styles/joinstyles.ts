@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
   titleText: {
     fontWeight: 700,
     fontSize: 39,
+    color: '#f7f2f2ff'
   },
   subText: {
     fontWeight: 400,
@@ -66,8 +67,9 @@ const styles = StyleSheet.create({
     fontWeight: 300
   },
   secondaryButtonGroup: {
-    rowGap: 15,
-    marginTop: 15,
+    rowGap: 0,
+    marginTop: 0,
+    
   },
   secondaryButton: {
     height: 53,
@@ -80,7 +82,8 @@ const styles = StyleSheet.create({
   },
   secondaryButtonText: {
     fontSize: 18,
-    fontWeight: 400
+    fontWeight: 400,
+    color: '#7B7B7B'
   },
   signupgroup: {
     flexDirection: 'row',
@@ -88,22 +91,24 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 77, 
     right: 76,
-    bottom: 33
+    bottom: 50,
+    columnGap: 5
   },
   signupTitleText: {
-    fontSize: 18,
-    fontWeight: 400
+    fontSize: 14,
+    fontWeight: 400,
+    color: '#f7f4f4ff'
   },
   signupSubTitleText: {
-    fontSize: 18,
-    fontWeight: 600,
+    fontSize: 16,
+    fontWeight: 400,
     color: '#FFA800'
   },
   dividerGroup: {
     flexDirection: 'row',
     alignItems: 'center',
     columnGap: 10,
-    marginBottom: 25,
+    marginBottom: 10,
     marginTop: 29,
   },
   divider: {
