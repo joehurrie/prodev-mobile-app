@@ -2,13 +2,15 @@ import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/joinstyles";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { useTheme } from '@react-navigation/native';
 
 export default function Index() {
+  const { colors } = useTheme();
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <View style={styles.iconsection}>
-          <Ionicons name="arrow-back" size={25} />
+          <Ionicons name="arrow-back" size={25} color={colors.text}/>
           <Image source={require("@/assets/images/Logo1.png")} />
         </View>
 
